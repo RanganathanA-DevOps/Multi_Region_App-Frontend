@@ -1,5 +1,5 @@
 # Build Stage
-FROM betteruptimeacr.azurecr.io/node:18 AS build
+FROM betterptimeacr.azurecr.io/node:18 AS build
 WORKDIR /app
 
 COPY package*.json ./
@@ -10,7 +10,7 @@ COPY . .
 
 RUN npm run build
 
-FROM betteruptimeacr.azurecr.io/nginx:latest
+FROM betterptimeacr.azurecr.io/nginx:latest
 WORKDIR /usr/share/nginx/html
 
 # Remove default Nginx static files
