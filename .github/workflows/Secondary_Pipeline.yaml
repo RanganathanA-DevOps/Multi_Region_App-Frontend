@@ -12,7 +12,7 @@ permissions:
 
 env:
   SERVICE_TYPE: frontend
-  ENVIRONMENT: dev 
+  ENVIRONMENT: secondary 
 
 
 jobs:
