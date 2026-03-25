@@ -87,8 +87,8 @@ jobs:
           context: .
           push: true
           tags: |
-                ${{ secrets.ACR_SERVER_URL }}/${{ vars.REPO_NAME }}:${{ env.IMAGE_TAG }}
-                ${{ secrets.ACR_SERVER_URL }}/${{ vars.REPO_NAME }}:latest
+                ${{ secrets.ACR_SERVER_URL }}/${{ env.REPO_NAME }}:${{ env.IMAGE_TAG }}
+                ${{ secrets.ACR_SERVER_URL }}/${{ env.REPO_NAME }}:latest
           file: ./Dockerfile
 
   update-deployment-file:
