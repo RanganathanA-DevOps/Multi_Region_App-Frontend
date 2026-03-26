@@ -1,4 +1,4 @@
-name: Uptime – Dev Frontend Build and Deployment Pipeline
+name: Uptime – Primary Dev Frontend Build and Deployment Pipeline
 
 on:
   push:
