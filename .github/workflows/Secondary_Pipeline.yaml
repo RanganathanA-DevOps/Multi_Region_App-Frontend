@@ -46,6 +46,7 @@ jobs:
           # Create repository name (lowercase for ACR compatibility)
           REPO_NAME="${{ vars.APPLICATION_NAME }}-${{ env.ENVIRONMENT }}-${{ env.SERVICE_TYPE }}"
           echo "REPO_NAME=${REPO_NAME}" >> $GITHUB_ENV
+          echo "REPO_NAME=${REPO_NAME}" >> $GITHUB_OUTPUT
 
           # Create deployment file path
           DEPLOYMENT_FILE_PATH="secondary/deployment.yaml"
